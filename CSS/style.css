@@ -1,8 +1,59 @@
-div{
-    background: red;
-    background-color: wheat;
+/* font-family: 'Courgette', cursive;
+font-family: 'Domine', serif;
+font-family: 'Kaushan Script', cursive; */
+
+body {
+    margin: 0;
+    position: relative;
 }
-#header{
-    padding: 0 0 0 0;
-    height: 50px;
+
+#header {
+    box-sizing: border-box;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+ul {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+    font-family: 'Courgette', cursive;
+    
+    margin: 0;
+    padding: 10px 0;
+    position: sticky;
+    text-align: center;
+}
+
+li {
+    display: inline-flex;
+    padding: 0 60px;
+    text-align: center;
+}
+
+.btn{
+    color: black;
+    font-size: 1.5em;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+.btn-primary{
+    --bs-btn-hover-color: #000000;
+    --bs-btn-hover-bg: rgba(255, 255, 255,0.5);
+    --bs-btn-active-color: rgba(255, 255, 255);
+    --bs-btn-active-bg: rgba(0, 0, 0, 0.8);
+}
+
+.background-pic{
+    height: 100%;
+    width: 100%;
+}
+.footer-text{
+    background: #c0bebe;
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+    left: 625px;
 }
