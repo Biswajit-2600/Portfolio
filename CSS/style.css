@@ -1,9 +1,17 @@
 /* font-family: 'Courgette', cursive;
 font-family: 'Domine', serif;
-font-family: 'Kaushan Script', cursive; */
+font-family: 'Kaushan Script', cursive; 
+font-family: 'Kalam', cursive;
+*/
 
 body {
+    background-color: #FAF0E4;
+    display: flex;
+    flex-direction: column;
     margin: 0;
+    min-height: 100%;
+    padding: 5px;
+    padding-top: 0;
 }
 
 .navbar {
@@ -58,7 +66,7 @@ li {
 
 .btn-primary {
     --bs-btn-hover-color: #000000;
-    --bs-btn-hover-bg: rgba(229, 216, 216, 0.8);
+    --bs-btn-hover-bg: rgba(122, 57, 57, 0.8);
     --bs-btn-active-color: rgba(255, 255, 255, 1);
     --bs-btn-active-bg: rgba(0, 0, 0, 0.8);
 }
@@ -66,7 +74,7 @@ li {
 .start-text {
     color: rgb(162, 0, 0);
     font-family: 'Kaushan Script', cursive;
-    font-size: 6vh;
+    font-size: 3rem;
     position: relative;
     margin: auto;
     top: 40%;
@@ -74,8 +82,8 @@ li {
     text-align: center;
 }
 
-#image {
-    height: 500px;
+#bg-image {
+    height: 710px;
     width: 100%;
     background-attachment: fixed;
     background-image: url("/Media/images/background.png");
@@ -84,27 +92,60 @@ li {
     background-size: cover;
 }
 
-#about { 
-    background-color: #FAF0E4;
-    position: relative;
-}
-
-.about-header {
+h4 {
     text-align: center;
     font-family: 'Domine', serif;
+    font-size: 3.125rem;
+    margin-bottom: 0;
 }
 
-.about-section{
-    padding: 0 10px;
+.about-image {
+    float: right;
+    border-radius: 30%;
+    height: 250px;
+    padding-right: 5px;
+    padding-left: 10px;
+    width: 250px;
+}
+
+.about-details {
+    padding: 0 10px 10px 10px;
+}
+
+.about-section-text {
+    padding: 0 5px;
+    font-family: 'Kalam', cursive;
+    font-weight: 200;
+    font-size: 1.25rem;
+    padding-right: 20px;
+    text-align: justify;
+    text-indent: 5%;
+    margin-bottom: 0;
+}
+
+.about-section-intro {
+    font-family: 'Courgette', cursive;
+    font-size: 30px;
+    font-weight: 590;
+    margin-bottom: 0;
+    padding: 0 5px;
+}
+
+.education-image {
+    float: right;
+    border-radius: 30%;
+    height: 250px;
+    padding-right: 5px;
+    padding-left: 10px;
+    width: 250px;
+}
+
+footer {
+    background-color: #5b6d88;
+    padding: 10px 0;
+    text-align: center;
 }
 
 .footer-text {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #FAF0E4;
-    margin: 0;
-    padding: 10px 0;
-    text-align: center;
+    margin: auto;
 }

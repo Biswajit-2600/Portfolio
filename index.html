@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Courgette&family=Domine:wght@500&family=Kaushan+Script&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Domine:wght@500&family=Kalam&family=Kaushan+Script&display=swap"
       rel="stylesheet"
     />
     <link
@@ -35,15 +35,19 @@
     B.Tech undergrad with Information Technology as major."
     />
   </head>
+
   <body>
-    <div id="image">
+    <div id="bg-image">
       <p class="start-text">
         "Nothing is more creative... nor destructive... than a brilliant mind
         with a purpose."<br />
         - Dan Brown
       </p>
     </div>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-custom">
+    <nav
+      id="navbar-current-item"
+      class="navbar sticky-top navbar-expand-lg navbar-custom"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><img
@@ -72,28 +76,40 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#about-header"
                 ><button type="button" class="btn btn-primary btn-lg">
                   About
                 </button></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#education-header"
                 ><button type="button" class="btn btn-primary btn-lg">
                   Education
                 </button></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#experience-header"
                 ><button type="button" class="btn btn-primary btn-lg">
                   Experience
                 </button></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#contact-header"
                 ><button type="button" class="btn btn-primary btn-lg">
                   Contact
                 </button></a
@@ -104,29 +120,112 @@
       </div>
     </nav>
 
-    <div id="about">
-        <section>
-            <h1 class="about-header" style="padding: 10px 0 0 0;">Know <span style="font-family: 'Kaushan Script', cursive;">Me</span></h1>
-            <p class="about-section">
-                <span style="font-family: 'Courgette', cursive; font-size: 20px;">Hey there!</span> I am Biswajit, a passionate IT undergrad pursuing my B.Tech and exploring diverse fields, always open to new ideas. A Tech enthusiast having an inclination towards networking, cyber security and development, basically eager about the 21st century's OXYGEN, called <span><b>"INTERNET"</b></span>. Ready to make an impact in the ever-evolving IT world.
-            </p>
-            <div class="about-image">
-                <img src="" alt="">
-            </div>
-        </section> 
-        <div>
-            <img src="" alt="">
+    <section id="about-section-id">
+      <h4 id="about-header" class="about-header" style="padding: 10px 0 0 0">
+        <span style="text-decoration: underline">Know</span>
+        <span style="font-family: 'Kaushan Script', cursive">Me</span>
+      </h4>
+      <div class="about-details">
+        <div id="about-image-id">
+          <img
+            class="about-image"
+            src="./Media/images/portfolio-pic.png"
+            alt="portfolio-picture"
+          />
         </div>
-    </div>
+        <div>
+          <p class="about-section-intro">Hey there!</p>
+          <p class="about-section-text">
+            I am Biswajit, a passionate IT undergrad pursuing my B.Tech and
+            exploring diverse fields, always open to new ideas. A Tech
+            enthusiast having an inclination towards networking, cyber security
+            and development, and basically eager about the 21st century's
+            OXYGEN, called
+            <span><b>"INTERNET"</b></span
+            >. Ready to make an impact in the ever-evolving IT world. I have
+            recently acquired a significant amount of experience in my field,
+            and I eagerly anticipate further enriching my expertise through
+            engaging in diverse internships and pursuing promising job
+            opportunities.
+          </p>
+          <br />
+          <p class="about-section-text">
+            I have a profound and unwavering passion for exploring novels of
+            diverse genres, making reading my cherished and favorite pastime.
+            When it comes to sports and games, table tennis, badminton, and
+            chess captivate me the most.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <div id="education">
-      <div id="connect-form"></div>
-      <div id="address_social"></div>
-    </div>
+    <section id="education-section-id">
+      <h4
+        id="education-header"
+        class="education-header"
+        style="padding: 10px 0 0 0"
+      >
+        <span style="font-family: 'Kaushan Script', cursive">My</span>
+        <span style="text-decoration: underline">Education</span>
+      </h4>
+      <div class="education-details">
+        <div id="education-image-id">
+          <img
+            class="education-image"
+            src="./Media/images/nirmala-convent.png"
+            alt="portfolio-picture"
+          />
+        </div>
+        <div>
+          <p class="education-section-text">
+
+          </p>
+        </div>
+
+        <!-- <div id="education-image-id">
+          <img
+            class="education-image"
+            src="./Media/images/gonasika.png"
+            alt="portfolio-picture"
+            style="float: left;"
+          />
+        </div>
+        <div>
+          <p class="education-section-text"></p>
+        </div>
+
+        <div id="education-image-id">
+          <img
+            class="education-image"
+            src="./Media/images/vssut.png"
+            alt="portfolio-picture"
+          />
+        </div>
+        <div>
+          <p class="education-section-text"></p>
+        </div> -->
+      </div>
+    </section>
+
+    <section id="experience-section-id">
+      <h4
+        id="experience-header"
+        class="experience-header"
+        style="padding: 10px 0 0 0"
+      >
+        <span style="text-decoration: underline">Know</span>
+        <span style="font-family: 'Kaushan Script', cursive">Me</span>
+      </h4>
+    </section>
+
     <section id="footer">
-      <footer>
-        <p class="footer-text">&copy;Webpage design by Biswajit Panda, 2023</p>
-      </footer>
+      <div class="footer-wrap">
+        <footer>
+          <p class="footer-text">
+            &copy;Webpage design by Biswajit Panda, 2023
+          </p>
+        </footer>
+      </div>
     </section>
   </body>
 </html>
