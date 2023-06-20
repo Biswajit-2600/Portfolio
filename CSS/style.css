@@ -4,56 +4,107 @@ font-family: 'Kaushan Script', cursive; */
 
 body {
     margin: 0;
-    position: relative;
 }
 
-#header {
-    box-sizing: border-box;
+.navbar {
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-right: 0;
     position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
+    --bs-navbar-padding-y: 0;
+}
+
+.logo {
+    height: 2em;
+    width: 4em;
+}
+
+.navbar-brand {
+    padding-left: 30px;
+}
+
+.nav-link {
+    padding: 0;
+}
+
+.navbar-nav {
+    margin-left: auto;
 }
 
 ul {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0);
     color: black;
     font-family: 'Courgette', cursive;
-    
+    text-align: right;
     margin: 0;
-    padding: 10px 0;
-    position: sticky;
-    text-align: center;
+    padding: 5px 0;
 }
 
 li {
     display: inline-flex;
-    padding: 0 60px;
+    padding: 0 20px;
     text-align: center;
 }
 
-.btn{
+.btn {
     color: black;
     font-size: 1.5em;
     background: rgba(255, 255, 255, 0);
     border: none;
 }
 
-.btn-primary{
+.btn-primary {
     --bs-btn-hover-color: #000000;
-    --bs-btn-hover-bg: rgba(255, 255, 255,0.5);
-    --bs-btn-active-color: rgba(255, 255, 255);
+    --bs-btn-hover-bg: rgba(229, 216, 216, 0.8);
+    --bs-btn-active-color: rgba(255, 255, 255, 1);
     --bs-btn-active-bg: rgba(0, 0, 0, 0.8);
 }
 
-.background-pic{
-    height: 100%;
-    width: 100%;
-}
-.footer-text{
-    background: #c0bebe;
-    padding: 10px 0;
-    margin: 0;
+.start-text {
+    color: rgb(195, 191, 159);
+    font-family: 'Kaushan Script', cursive;
+    font-size: 6vh;
+    position: relative;
+    margin: auto;
+    top: 40%;
+    bottom: 40%;
     text-align: center;
-    left: 625px;
+}
+
+#image {
+    height: 500px;
+    width: 100%;
+    background-attachment: fixed;
+    background-image: url("/Media/images/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about { 
+    background-color: #FAF0E4;
+    position: relative;
+}
+
+.about-header {
+    text-align: center;
+    font-family: 'Domine', serif;
+}
+
+.about-section{
+    padding: 0 10px;
+}
+
+.footer-text {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #FAF0E4;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
 }
