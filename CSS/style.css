@@ -2,6 +2,7 @@
 font-family: 'Domine', serif;
 font-family: 'Kaushan Script', cursive; 
 font-family: 'Kalam', cursive;
+font-family: 'DM Serif Display', serif;
 */
 
 body {
@@ -15,7 +16,7 @@ body {
 }
 
 .navbar {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 1);
     margin-right: 0;
     position: -webkit-sticky;
     position: fixed;
@@ -72,13 +73,13 @@ li {
 }
 
 .start-text {
-    color: rgb(162, 0, 0);
+    color: rgb(169, 24, 24);
     font-family: 'Kaushan Script', cursive;
-    font-size: 3rem;
+    font-size: 5vw;
     position: relative;
     margin: auto;
-    top: 40%;
-    bottom: 40%;
+    top: 25%;
+    bottom: 30%;
     text-align: center;
 }
 
@@ -131,19 +132,58 @@ h4 {
     padding: 0 5px;
 }
 
+#education-section-id {
+    background-color: #F7FFE5;
+}
+
+.education-details {
+    padding: 50px;
+    padding-top: 20px;
+}
+
 .education-image {
-    float: right;
     border-radius: 30%;
-    height: 250px;
-    padding-right: 5px;
-    padding-left: 10px;
-    width: 250px;
+    height: 150px;
+    padding: 0;
+    width: 150px;
+}
+
+.institue-specifics{
+    margin-bottom: 0;
+}
+
+.education-course {
+    font-family: 'Kalam', cursive;
+    font-size: 2rem;
+    font-weight: 550;
+    text-align: center;
+}
+
+.education-details,.row{
+    padding: 20px 5px 50px;
+}
+
+.education-institute { 
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.matriculation{
+    padding: 0;
+}
+
+.education-marks {
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 footer {
     background-color: #5b6d88;
     padding: 10px 0;
     text-align: center;
+    text-indent: 5%;
 }
 
 .footer-text {
