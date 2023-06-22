@@ -80,7 +80,7 @@ li {
     height: 710px;
     width: 100%;
     background-attachment: fixed;
-    background-image: url("/Media/images/background.png");
+    background-image: url("../Media/images/background.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
