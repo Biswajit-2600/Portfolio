@@ -102,10 +102,10 @@ h4 {
 .about-image {
     float: right;
     border-radius: 30%;
-    height: 250px;
+    height: 200px;
     padding-right: 5px;
     padding-left: 10px;
-    width: 250px;
+    width: 200px;
 }
 
 .about-section-text {
