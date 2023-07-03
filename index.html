@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio@Biswajit.Panda</title>
-    <link rel="icon" href="../Media/icons/favicon.ico" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="../Media/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -44,7 +48,7 @@
       <div class="home-content">
         <h3 class="slide-bottom">Hey, there!</h3>
         <h1 class="slide-right">I'm Biswajit Panda</h1>
-        <h3 class="slide-top">And I'm a<br><span class="text"></span></h3>
+        <h3 class="slide-top">And I'm a<br /><span class="text"></span></h3>
         <p class="slide-right">
           As a passionate IT undergrad, I'm currently looking for job and
           internship opportunities focused on the fields of Networking, Software
@@ -377,13 +381,35 @@
         </div>
 
         <div class="contact-form slide-bottom">
-          <form action="" autocomplete="off">
-            <input type="text" placeholder="Name" required />
-            <input type="email" placeholder="Email" required />
-            <input type="text" placeholder="Subject" required />
+          <form
+            action="https://formsubmit.co/biswajitpanda754@gmail.com"
+            method="POST"
+            autocomplete="off"
+          >
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="text" name="subject" placeholder="Subject" required />
+            <input type="hidden" name="_next" value="https://biswajit-2600.github.io/Thank-you-Page/" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="New submission from Portolio Website!"
+            />
+            <input
+              type="hidden"
+              name="_autoresponse"
+              value="Thanks for contacting, I shall revert back as soon as possible"
+            />
+            <input type="hidden" name="_template" value="table" />
+            <input
+              type="hidden"
+              name="_blacklist"
+              value="Looks like this message could be a spam!"
+            />
+
             <textarea
-              name=""
-              id=""
+              name="message"
+              id="message"
               cols="40"
               rows="10"
               placeholder="Message"
@@ -421,8 +447,8 @@
       </div>
     </footer>
 
-    <script src="mixitup.min.js"></script>
-    <script src="main.js"></script>
+    <script src="./JS/mixitup.min.js"></script>
+    <script src="./JS/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

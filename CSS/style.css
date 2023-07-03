@@ -129,12 +129,12 @@ section {
 }
 
 .home-content h3 {
-    font-size: 32px;
+    font-size: var(--normal-font);
     font-weight: 700;
 }
 
 .home-content h3:nth-of-type(2) {
-    margin-bottom: 30px;
+    margin-bottom: var(--normal-font);
 }
 
 .home-content h3 span {
@@ -782,7 +782,7 @@ a.top:hover {
 
 /* parallax ------------------------------------ */
 
-.scroll-scale{
+.scroll-scale {
     opacity: 0;
     transform: scale(.9);
     transition: all 2s;
@@ -1018,9 +1018,9 @@ a.top:hover {
         margin: 2.5rem 0;
     }
 
-    .contact-icons a{
-        margin-top: 10px ;
-        margin-bottom: 10px ;
+    .contact-icons a {
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     footer p {
@@ -1067,8 +1067,16 @@ a.top:hover {
         padding: 10px 10%;
     }
 
-    .contact-icons a{
-        margin-top: 10px ;
-        margin-bottom: 10px ;
+    :root {
+        --normal-font: 1.5rem;
+    }
+
+    .home-content h1 {
+        font-size: 45px;
+    }
+
+    .contact-icons a {
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
