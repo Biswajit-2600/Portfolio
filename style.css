@@ -61,7 +61,7 @@ body {
     text-decoration: none;
     font-weight: 600;
     opacity: 0;
-    animation: slideRight 1s ease forwards;
+    animation: slideBottom 1s ease forwards;
 }
 
 .logo span {
@@ -100,7 +100,7 @@ body {
     border-radius: 3px;
     color: #fff;
     display: none;
-    animation: slideLeft 1s ease forwards;
+    animation: slideTop 1s ease forwards;
 }
 
 section {
@@ -812,28 +812,28 @@ a.top:hover {
     transition: all 2s ease-in-out;
 }
 
-.slide-left-1 {
+.slide-top-1 {
     opacity: 0;
-    transform: translateX(150px);
+    transform: translateY(100px);
     transition: all 1s ease-in-out;
 }
 
-.slide-left-2 {
+.slide-top-2 {
     opacity: 0;
-    transform: translateX(150px);
-    transition: all 1.1s ease-in-out;
-}
-
-.slide-left-3 {
-    opacity: 0;
-    transform: translateX(150px);
-    transition: all 1.2s ease-in-out;
-}
-
-.slide-left-4 {
-    opacity: 0;
-    transform: translateX(150px);
+    transform: translateY(100px);
     transition: all 1.3s ease-in-out;
+}
+
+.slide-top-3 {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1.6s ease-in-out;
+}
+
+.slide-top-4 {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1.9s ease-in-out;
 }
 
 .show-items {
@@ -1018,6 +1018,11 @@ a.top:hover {
         margin: 2.5rem 0;
     }
 
+    .contact-icons a{
+        margin-top: 10px ;
+        margin-bottom: 10px ;
+    }
+
     footer p {
         font-size: 1rem;
     }
@@ -1050,7 +1055,6 @@ a.top:hover {
 
     .contact-icons i {
         margin-bottom: 0;
-        margin-top: 20px;
     }
 
     .header {
@@ -1061,5 +1065,10 @@ a.top:hover {
     .header.sticky {
         background: #051129;
         padding: 10px 10%;
+    }
+
+    .contact-icons a{
+        margin-top: 10px ;
+        margin-bottom: 10px ;
     }
 }

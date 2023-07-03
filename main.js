@@ -1,7 +1,7 @@
 var typed = new Typed(".text", {
   strings: [
     "Web Developer",
-    "Cyber Security Enthusiast",
+    "CyberSec buff",
     "Software Developer",
     "Network Analyst",
   ],
@@ -106,14 +106,14 @@ slideRight.forEach((el) => observer.observe(el));
 const slideLeft = document.querySelectorAll(".slide-left");
 slideLeft.forEach((el) => observer.observe(el));
 
-const slideLeftAnchor1 = document.querySelectorAll(".slide-left-1");
+const slideLeftAnchor1 = document.querySelectorAll(".slide-top-1");
 slideLeftAnchor1.forEach((el) => observer.observe(el));
 
-const slideLeftAnchor2 = document.querySelectorAll(".slide-left-2");
+const slideLeftAnchor2 = document.querySelectorAll(".slide-top-2");
 slideLeftAnchor2.forEach((el) => observer.observe(el));
 
-const slideLeftAnchor3 = document.querySelectorAll(".slide-left-3");
+const slideLeftAnchor3 = document.querySelectorAll(".slide-top-3");
 slideLeftAnchor3.forEach((el) => observer.observe(el));
 
-const slideLeftAnchor4 = document.querySelectorAll(".slide-left-4");
+const slideLeftAnchor4 = document.querySelectorAll(".slide-top-4");
 slideLeftAnchor4.forEach((el) => observer.observe(el));
