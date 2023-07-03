@@ -2,240 +2,221 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio@Biswajit.Panda</title>
-    <link
-      rel="shortcut icon"
-      href="./Media/icons/logo-icons/favicon.ico"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="media/icons/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Courgette&family=Domine:wght@500&family=Kalam&family=Kaushan+Script&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./CSS/style.css" />
-    <meta
-      name="description"
-      content="Personal website of Biswajit Panda. 
-    Student at Veer Surendra Sai University of Technology(VSSUT), Burla. 
-    B.Tech undergrad with Information Technology as major."
-    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   </head>
-
   <body>
-    <div id="bg-image">
-      <p class="start-text">
-        "Nothing is more creative... <br />nor destructive... <br />than a
-        brilliant mind with a purpose."<br />
-        - Dan Brown
-      </p>
-    </div>
-    <nav
-      id="navbar-current-item"
-      class="navbar sticky-top navbar-expand-lg navbar-custom"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img
-            class="logo"
-            src="./Media/icons/logo-icons/logo-no-background.png"
-            alt="logo"
-            style="height: 2em; width: 4em"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                ><button type="button" class="btn btn-primary btn-lg">
-                  Home
-                </button></a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="#about-header"
-                ><button type="button" class="btn btn-primary btn-lg">
-                  About
-                </button></a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="#education-header"
-                ><button type="button" class="btn btn-primary btn-lg">
-                  Education
-                </button></a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="#experience-header"
-                ><button type="button" class="btn btn-primary btn-lg">
-                  Experience
-                </button></a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="#contact-header"
-                ><button type="button" class="btn btn-primary btn-lg">
-                  Contact
-                </button></a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <!-- navbar ------------------------------------>
 
-    <section id="about-section-id">
-      <h4 id="about-header" style="padding: 10px 0 0 0">
-        <span style="text-decoration: underline">Know</span>
-        <span style="font-family: 'Kaushan Script', cursive">Me</span>
-      </h4>
-      <div class="about-details" style="padding: 0 10px 10px 10px">
-        <div id="about-image-id">
-          <img
-            class="about-image"
-            src="./Media/images/portfolio-pic.png"
-            alt="portfolio-picture"
-          />
+    <header class="header">
+      <a href="#" class="logo"><span>B</span>iswajit.</a>
+
+      <ul class="navlist">
+        <li><a href="#home" style="--i: 1">Home</a></li>
+        <li><a href="#about" style="--i: 2">About</a></li>
+        <li><a href="#journey" style="--i: 3">Journey</a></li>
+        <li><a href="#skills" style="--i: 4">Skills</a></li>
+        <li>
+          <a href="#portfolio" style="--i: 5">Portfolio</a>
+        </li>
+        <li><a href="#contact" style="--i: 6">Contact</a></li>
+      </ul>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- home section ------------------------------------>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3 class="slide-bottom">Hey, there!</h3>
+        <h1 class="slide-right">I'm Biswajit Panda</h1>
+        <h3 class="slide-top">And I'm a <span class="text"></span></h3>
+        <p class="slide-left">
+          As a passionate IT undergrad, I'm currently looking for job and
+          internship opportunities focused on the fields of Networking, Software
+          Development, Cyber Security, Cloud Computing...
+        </p>
+        <div class="home-sci">
+          <a
+            href="https://www.facebook.com/profile.php?id=100004132007211"
+            target="_blank"
+            class="slide-left-1"
+            style="--i: 7"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/biswajit_2600/"
+            target="_blank"
+            class="slide-left-2"
+            style="--i: 8"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=%2B919658309750&text&type=phone_number&app_absent=0"
+            target="_blank"
+            class="slide-left-3"
+            style="--i: 9"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+          <a
+            href="https://twitter.com/biswajit_2600"
+            target="_blank"
+            class="slide-left-4"
+            style="--i: 10"
+            ><i class="bx bxl-twitter"></i
+          ></a>
         </div>
-        <div>
-          <p class="about-section-intro">Hey there!</p>
-          <p class="about-section-text">
-            I am Biswajit, a passionate IT undergrad pursuing my B.Tech and
-            exploring diverse fields, always open to new ideas. A Tech
-            enthusiast having an inclination towards networking, cyber security
-            and development, and basically eager about the 21st century's
-            OXYGEN, called
-            <span><b>"INTERNET"</b></span
-            >. Ready to make an impact in the ever-evolving IT world. I have
-            recently acquired a significant amount of experience in my field,
-            and I eagerly anticipate further enriching my expertise through
-            engaging in diverse internships and pursuing promising job
-            opportunities.
-          </p>
-          <br />
-          <p class="about-section-text">
-            I have a profound and unwavering passion for exploring novels of
-            diverse genres, making reading my cherished and favorite pastime.
-            When it comes to sports and games, table tennis, badminton, and
-            chess captivate me the most.
-          </p>
-        </div>
+        <a
+          href="https://drive.google.com/file/d/10fCy1jZRrCAZqtSJ2FDnJ1YzoCtRlVHK/view?usp=sharing"
+          class="btn-box slide-top"
+          target="_blank"
+          >My Resume</a
+        >
       </div>
     </section>
 
-    <section id="education-section-id">
-      <h4 id="education-header" style="padding: 10px 0 0 0">
-        <span style="font-family: 'Kaushan Script', cursive">My</span>
-        <span style="text-decoration: underline">Education</span>
-      </h4>
+    <!-- about section ------------------------------------>
 
-      <div class="container text-center">
-        <div class="education-details row">
-          <div class="matriculation col" style="padding: 0">
-            <div id="education-image-id">
-              <img
-                class="education-image"
-                src="./Media/images/nirmala-convent.png"
-                alt="education-picture"
-              />
-            </div>
-            <div>
-              <div class="education-section-text">
-                <p
-                  class="education-course institue-specifics"
-                  style="margin-bottom: 0"
-                >
-                  Matriculation (2017)
-                </p>
-                <p class="education-institute institue-specifics">
+    <section class="about" id="about">
+      <h2>About <span>Me</span></h2>
+      <div class="about-img slide-right">
+        <img src="./media/images/about-image.png" alt="portfolio-pic" />
+        <span class="circle-spin"></span>
+      </div>
+
+      <div class="about-content slide-left">
+        <h4>An IT Undergrad!</h4>
+        <p style="margin-right: 20px; margin-left: 20px">
+          I am Biswajit, a passionate IT undergrad pursuing my B.Tech and
+          exploring diverse fields, always open to new ideas. A Tech enthusiast
+          having an inclination towards networking, cyber security and
+          development, and basically eager about the 21st century's OXYGEN,
+          called <span><b>"INTERNET"</b></span
+          >. Ready to make an impact in the ever-evolving IT world. I have
+          recently acquired a significant amount of experience in my field, and
+          I eagerly anticipate further enriching my expertise through engaging
+          in diverse internships and pursuing promising job opportunities.
+        </p>
+        <p style="margin-right: 20px; margin-left: 20px">
+          I have a profound and unwavering passion for exploring novels of
+          diverse genres, making reading my cherished and favorite pastime. When
+          it comes to sports and games, table tennis, badminton, and chess
+          captivate me the most.
+        </p>
+      </div>
+    </section>
+
+    <!-- journey section ------------------------------------>
+
+    <section class="journey" id="journey">
+      <h2>My <span>Journey</span></h2>
+
+      <div class="journey-row">
+        <div class="journey-column slide-right">
+          <h3 class="title">Education</h3>
+
+          <div class="journey-box">
+            <div class="journey-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bx-calendar"></i>2013 - 2017
+                </div>
+                <h3>Matriculation</h3>
+                <p style="font-size: 1.5rem">
                   Nirmala Convent School, Keonjhar
                 </p>
-                <p class="education-marks institue-specifics">
-                  Percentage: 92.21%
-                </p>
+                <p>Percentage: 92.21%</p>
               </div>
             </div>
-          </div>
 
-          <div class="intermediate col">
-            <div id="education-image-id">
-              <img
-                class="education-image"
-                src="./Media/images/gonasika.png"
-                alt="education-picture"
-              />
-            </div>
-            <div>
-              <div class="education-section-text">
-                <p class="education-course institue-specifics">
-                  Intermediate (2019)
-                </p>
-                <p class="education-institute institue-specifics">
+            <div class="journey-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bx-calendar"></i>2017 - 2019
+                </div>
+                <h3>Intermediate</h3>
+                <p style="font-size: 1.5rem">
                   Gonasika Higher Secondary School, Keonjhar
                 </p>
-                <p class="education-marks institue-specifics">
-                  Percentage: 85.67%
-                </p>
+                <p>Percentage: 85.67%</p>
               </div>
             </div>
-          </div>
 
-          <div class="graduation col">
-            <div id="education-image-id">
-              <img
-                class="education-image"
-                src="./Media/images/vssut.png"
-                alt="education-picture"
-              />
-            </div>
-            <div>
-              <div class="education-section-text">
-                <p class="education-course institue-specifics">
-                  Bachelor's of Technology - IT (2024)
-                </p>
-                <p class="education-institute institue-specifics">
+            <div class="journey-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bx-calendar"></i>2020 - 2024
+                </div>
+                <h3>Bachelor's of Technology - IT</h3>
+                <p style="font-size: 1.5rem">
                   Veer Surendra Sai University of Technology, Burla
                 </p>
-                <p class="education-marks institue-specifics">
-                  CGPA: 8.50 (Upto: 6th Semester)
-                </p>
+                <p>CGPA: 8.50 (Upto: 6th Semester)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="journey-column slide-left">
+          <h3 class="title">Experience</h3>
+
+          <div class="journey-box">
+            <div class="journey-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bx-calendar"></i>Aug 2022 - Present
+                </div>
+                <h3>Cyber Security Lead - GDSC, VSSUT</h3>
+                <!-- <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                  hic corrupti praesentium quaerat ea animi distinctio non
+                  doloribus dolores, excepturi nesciunt impedit. Commodi
+                  nesciunt illo ex, sequi reprehenderit corrupti omnis!
+                </p> -->
+              </div>
+            </div>
+
+            <div class="journey-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bx-calendar"></i>Aug 2022 - Present
+                </div>
+                <h3>Secretary - IEEE SB, VSSUT</h3>
+                <!-- <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                  hic corrupti praesentium quaerat ea animi distinctio non
+                  doloribus dolores, excepturi nesciunt impedit. Commodi
+                  nesciunt illo ex, sequi reprehenderit corrupti omnis!
+                </p> -->
+              </div>
+            </div>
+
+            <div class="journey-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bx-calendar"></i>Jan 2017 - Present
+                </div>
+                <h3>SDE Intern - Gnanig Technologies</h3>
+                <!-- <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                  hic corrupti praesentium quaerat ea animi distinctio non
+                  doloribus dolores, excepturi nesciunt impedit. Commodi
+                  nesciunt illo ex, sequi reprehenderit corrupti omnis!
+                </p> -->
               </div>
             </div>
           </div>
@@ -243,136 +224,208 @@
       </div>
     </section>
 
-    <section id="experience-section-id">
-      <h4 id="experience-header" style="padding: 10px 0 0 0; padding-top: 0">
-        <span style="font-family: 'Kaushan Script', cursive">My</span>
-        <span style="text-decoration: underline">Experience</span>
-      </h4>
+    <!-- skills section ------------------------------------>
+
+    <section id="skills" class="skills">
+      <h2>My <span>Skills</span></h2>
+      <div class="skill-main">
+        <!-- <div class="skill-right slide-scale">
+          <h3>Technical Skills</h3>
+          <div class="professional">
+            <div class="box">
+              <div class="circle" data-dots="80" data-percent="90"></div>
+              <div class="text">
+                <big>90%</big>
+                <small>Team Work</small>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="circle" data-dots="80" data-percent="90"></div>
+              <div class="text">
+                <big>90%</big>
+                <small>Team Work</small>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="circle" data-dots="80" data-percent="90"></div>
+              <div class="text">
+                <big>90%</big>
+                <small>Team Work</small>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="skill-right scroll-scale">
+          <h3>Professional Skills</h3>
+          <div class="professional">
+            <div class="box scroll-scale">
+              <div class="circle" data-dots="80" data-percent="90"></div>
+              <div class="text">
+                <big>90%</big>
+                <small>Team Work</small>
+              </div>
+            </div>
+
+            <div class="box scroll-scale">
+              <div class="circle" data-dots="80" data-percent="90"></div>
+              <div class="text">
+                <big>90%</big>
+                <small>Team Work</small>
+              </div>
+            </div>
+
+            <div class="box scroll-scale">
+              <div class="circle" data-dots="80" data-percent="90"></div>
+              <div class="text">
+                <big>90%</big>
+                <small>Team Work</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="contact-section-id">
-      <h4
-        id="contact-header"
-        class="contact-header"
-        style="padding: 10px 0 0 0"
-      >
-        <span style="font-family: 'Kaushan Script', cursive">Let's</span>
-        <span style="text-decoration: underline">Connect</span>
-      </h4>
+    <!-- portfolio section ------------------------------------>
 
-      <div class="container text-center">
-        <div class="row">
-          <div class="col">
-            <form action="">
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label"
-                  ><u>Send me a message</u></label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="name@example.com"
-                />
-              </div>
-              <div class="mb-3">
-                <label
-                  for="exampleFormControlTextarea1"
-                  class="form-label"
-                ></label>
-                <textarea
-                  class="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="3"
-                  placeholder="Your message"
-                  
-                ></textarea>
-              </div>
-              <div class="send-btn-div">
-                <button class="send-btn" type="submit">
-                  Send
-                </button>
-              </div>
-            </form>
-          </div>
-          <div class="col">
-            <p class="address-head" style="margin: 0"><u>Address</u></p>
-            <div class="address-details">
-              <p class="address-line">
-                Marichi Hall of Residence, Burla <br />
-                Sambalpur - 758001 <br />
+    <section class="portfolio" id="portfolio">
+      <div class="main-text">
+        <h2>My <span>Projects</span></h2>
+      </div>
+
+      <div class="container scroll-scale">
+        <div class="filter-buttons">
+          <button class="btn" data-filter="all">All</button>
+          <button class="btn" data-filter=".product">Product</button>
+          <button class="btn" data-filter=".inter">Interacting</button>
+          <button class="btn" data-filter=".web">Web App</button>
+        </div>
+
+        <div class="portfolio-gallery">
+          <div class="port-box mix product">
+            <div class="port-image">
+              <img src="./media/images/cryptography.png" alt="Project-Image" />
+            </div>
+            <div class="port-content">
+              <h3>Graphic Design</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
+                in amet illo temporibus at alias reprehenderit sed cumque facere
+                quaerat voluptates molestias recusandae incidunt deleniti sunt
+                repudiandae, assumenda suscipit fuga?
               </p>
-              <div class="icons-row" style="padding-top: 20px">
-                <a
-                  href="tel:+919658309750"
-                  target="_blank"
-                  style="padding: 10px 10px"
-                  ><div class="icons-each">
-                    <img
-                      src="./Media/icons/social-icons/call.png"
-                      alt="call-icon"
-                      class="contact-icons"
-                    /></div
-                ></a>
-                <a
-                  href="mailto:biswajitpanda754@gmail.com"
-                  target="_blank"
-                  style="padding: 10px 10px"
-                  ><div class="icons-each">
-                    <img
-                      src="./Media/icons/social-icons/email.png"
-                      alt="mail-icon"
-                      class="contact-icons"
-                    /></div
-                ></a>
-                <a
-                  href="https://www.linkedin.com/in/biswajit-p-9483bb203/"
-                  target="_blank"
-                  style="padding: 10px 10px"
-                  ><div class="icons-each">
-                    <img
-                      src="./Media/icons/social-icons/linkedin.png"
-                      alt="LinkedIn-icon"
-                      class="contact-icons"
-                    /></div
-                ></a>
-                <a
-                  href="https://github.com/Biswajit-2600"
-                  target="_blank"
-                  style="padding: 10px 10px"
-                  ><div class="icons-each">
-                    <img
-                      src="./Media/icons/social-icons/github.png"
-                      alt="GitHub-icon"
-                      class="contact-icons"
-                    /></div
-                ></a>
-                <a
-                  href="https://api.whatsapp.com/send/?phone=%2B919658309750&text&type=phone_number&app_absent=0"
-                  target="_blank"
-                  style="padding: 10px 10px"
-                  ><div class="icons-each">
-                    <img
-                      src="./Media/icons/social-icons/whatsapp.png"
-                      alt="WhatsApp-icon"
-                      class="contact-icons"
-                    /></div
-                ></a>
-              </div>
+              <a href="#"><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+
+          <div class="port-box mix inter">
+            <div class="port-image">
+              <img src="./media/images/cryptography.png" alt="Project-Image" />
+            </div>
+            <div class="port-content">
+              <h3>Graphic Design</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
+                in amet illo temporibus at alias reprehenderit sed cumque facere
+                quaerat voluptates molestias recusandae incidunt deleniti sunt
+                repudiandae, assumenda suscipit fuga?
+              </p>
+              <a href="#"><i class="bx bx-link-external"></i></a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="footer">
-      <div class="footer-wrap">
-        <footer>
-          <p class="footer-text">
-            &copy; Webpage design by Biswajit Panda, 2023
-          </p>
-        </footer>
+    <!-- contact section ------------------------------------>
+
+    <section class="contact" id="contact">
+      <h2>Contact <span>Me</span></h2>
+      <div class="contact-details">
+        <div class="contact-text">
+          <h4 class="slide-right">Address</h4>
+          <p class="slide-right">Marichi Hall of Residence, Burla 758001</p>
+          <div class="contact-icons">
+            <a href="tel:+919658309750" class="slide-left-1" style="--i: 7"
+              ><i class="bx bxs-phone-call"></i
+            ></a>
+            <a
+              href="mailto:biswajitpanda754@gmail.com"
+              target="_blank"
+              class="slide-left-2"
+              style="--i: 8"
+              ><i class="bx bxl-gmail"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/biswajit-p-9483bb203/"
+              target="_blank"
+              class="slide-left-3"
+              style="--i: 9"
+              ><i class="bx bxl-linkedin-square"></i
+            ></a>
+            <a
+              href="https://github.com/Biswajit-2600"
+              target="_blank"
+              class="slide-left-4"
+              style="--i: 10"
+              ><i class="bx bxl-github"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="contact-form slide-left">
+          <form action="" autocomplete="off">
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email" required />
+            <input type="text" placeholder="Subject" required />
+            <textarea
+              name=""
+              id=""
+              cols="40"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+            <input
+              type="submit"
+              value="Submit"
+              class="contact-btns slide-top"
+              style="--i: 7"
+            />
+            <input
+              type="reset"
+              value="Reset"
+              class="contact-btns slide-top"
+              style="--i: 8"
+            />
+          </form>
+        </div>
       </div>
     </section>
+
+    <footer>
+      <div class="footer-text">
+        <p>
+          Developed by Biswajit Panda <br />
+          <span>
+            (graphic images used in
+            <a href="#portfolio">Portfolio</a> Section are taken from
+            <a href="https://www.freepik.com/" target="_blank">freepik</a>)
+          </span>
+        </p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <script src="mixitup.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
