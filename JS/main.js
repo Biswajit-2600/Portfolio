@@ -1,7 +1,7 @@
 var typed = new Typed(".text", {
   strings: [
     "Web Developer",
-    "CyberSec buff",
+    "CyberSec Buff",
     "Software Developer",
     "Network Analyst",
   ],

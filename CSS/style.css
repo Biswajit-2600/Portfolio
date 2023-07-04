@@ -30,6 +30,10 @@
     border-radius: 5rem;
 }
 
+::-webkit-scrollbar-thumb:hover{
+    box-shadow: 0 0 20px #0ef;
+}
+
 body {
     color: #ededed;
     background: #112e42;
@@ -287,6 +291,12 @@ section {
     margin-bottom: 4rem;
 }
 
+.scroll-bar {
+    height: 500px;
+    overflow: auto;
+    padding: 20px;
+}
+
 .journey h2 {
     text-align: center;
     font-size: 60px;
@@ -303,12 +313,12 @@ section {
     flex: 1 1 40rem;
 }
 
-.journey-column .title {
+.journey-row .title {
     font-size: 2.5rem;
     margin: 0 0 1.5rem 2rem;
 }
 
-.journey-column .journey-box {
+.scroll-bar .journey-box {
     border-left: .2rem solid #0ef;
 }
 
