@@ -394,6 +394,7 @@ section {
 }
 
 .skill_tech {
+    display: flex;
     padding: 0 35px;
     align-items: center;
     justify-content: center;
@@ -404,6 +405,7 @@ section {
 }
 
 .skill_prof {
+    display: flex;
     padding: 0 35px;
     align-items: center;
     justify-content: center;
