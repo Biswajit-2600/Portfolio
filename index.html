@@ -216,15 +216,13 @@
     <section id="skills" class="skills">
       <h2>My <span>Skills</span></h2>
       <div class="container">
-        <div class="filter-buttons skill_buttons">
-          <a href="#skills" onclick="toggleVisibility('technical_menu');"
-            ><button class="btn">
-              <h3>Technical Skills</h3>
+        <div class="filter-buttons">
+          <a href="#skills" onclick="toggleVisibility('technical_menu');"><button class="btn">
+              <h3 id="technical_menu_btn" style="color: #0ef;">Technical</h3>
             </button></a
           >
-          <a href="#skills" onclick="toggleVisibility('professional_menu');"
-            ><button class="btn">
-              <h3>Professional Skills</h3>
+          <a href="#skills" onclick="toggleVisibility('professional_menu');"><button class="btn">
+              <h3 id="professional_menu_btn">Professional</h3>
             </button></a
           >
         </div>

@@ -217,6 +217,7 @@ skill_details.addEventListener("mouseleave", autoPlay);
 // menu for toggling between technical and professional skills
 
 var divs = ["technical_menu", "professional_menu"];
+var divBtn = ["technical_menu_btn", "professional_menu_btn"];
 var visibleDivId = null;
 function toggleVisibility(divId) {
   if (visibleDivId === divId) {
@@ -227,14 +228,18 @@ function toggleVisibility(divId) {
   hideNonVisibleDivs();
 }
 function hideNonVisibleDivs() {
-  var i, divId, div;
+  var i, divId, div, divBtnCurr, skillBtn;
   for (i = 0; i < divs.length; i++) {
     divId = divs[i];
+    divBtnCurr = divBtn[i];
     div = document.getElementById(divId);
+    skillBtn = document.getElementById(divBtnCurr);
     if (visibleDivId === divId) {
       div.style.display = "flex";
+      skillBtn.style.color = "#0ef";
     } else {
       div.style.display = "none";
+      skillBtn.style.color = "#fff";
     }
   }
 }

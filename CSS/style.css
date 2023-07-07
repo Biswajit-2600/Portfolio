@@ -1141,11 +1141,7 @@ a.top:hover {
     .home {
         grid-template-columns: 1fr;
     }
-
-    .skill-main {
-        grid-template-columns: 1fr;
-    }
-
+    
     .filter-buttons {
         margin: 2.5rem 0;
     }
