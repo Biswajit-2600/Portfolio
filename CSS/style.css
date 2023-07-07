@@ -393,6 +393,41 @@ section {
     background: #081b29;
 }
 
+.skills_filter_buttons {
+    margin: 2rem;
+    text-align: center;
+}
+
+.skills_filter_buttons button {
+    padding: 0 !important;
+    padding-top: 20px !important;
+}
+
+.skills_filter_buttons .btn {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: .4px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 60px;
+}
+
+.skills h2 span {
+    color: #0ef;
+}
+
+/* technical skills div -------------------------------*/
+
 .skill_tech {
     display: flex;
     padding: 0 35px;
@@ -403,6 +438,104 @@ section {
     border-radius: 50px;
     gap: 0;
 }
+
+.skill_details_tech {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+}
+
+.skill_details_tech i {
+    color: #000;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+}
+
+.skill_details_tech i:active {
+    transform: translateY(-50%) scale(0.85);
+}
+
+.skill_details_tech i:first-child {
+    left: -22px;
+}
+
+.skill_details_tech i:last-child {
+    right: -22px;
+}
+
+.skill_details_tech .carousel_tech {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.carousel_tech::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel_tech.no-transition {
+    scroll-behavior: auto;
+}
+
+.carousel_tech.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel_tech.dragging .card_tech {
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel_tech :where(.card_tech, .skill_spinner) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel_tech .card_tech {
+    background: #fff;
+    scroll-snap-align: start;
+    height: 300px;
+    list-style: none;
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.carousel_tech .card_tech .skill_spinner {
+    background: #8B53FF;
+    height: 148px;
+    width: 148px;
+    border-radius: 50%;
+}
+
+.carousel_tech .card_tech h2 {
+    color: #000;
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+}
+
+/* professional skills div ----------------------*/
 
 .skill_prof {
     display: flex;
@@ -424,13 +557,13 @@ section {
     font-size: 16px;
 }
 
-.skill_details {
+.skill_details_prof {
     max-width: 1100px;
     width: 100%;
     position: relative;
 }
 
-.skill_details i {
+.skill_details_prof i {
     color: #000;
     top: 50%;
     height: 50px;
@@ -447,19 +580,19 @@ section {
     transition: transform 0.1s linear;
 }
 
-.skill_details i:active {
+.skill_details_prof i:active {
     transform: translateY(-50%) scale(0.85);
 }
 
-.skill_details i:first-child {
+.skill_details_prof i:first-child {
     left: -22px;
 }
 
-.skill_details i:last-child {
+.skill_details_prof i:last-child {
     right: -22px;
 }
 
-.skill_details .carousel {
+.skill_details_prof .carousel_prof {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) - 12px);
@@ -471,31 +604,31 @@ section {
     scrollbar-width: none;
 }
 
-.carousel::-webkit-scrollbar {
+.carousel_prof::-webkit-scrollbar {
     display: none;
 }
 
-.carousel.no-transition {
+.carousel_prof.no-transition {
     scroll-behavior: auto;
 }
 
-.carousel.dragging {
+.carousel_prof.dragging {
     scroll-snap-type: none;
     scroll-behavior: auto;
 }
 
-.carousel.dragging .card {
+.carousel_prof.dragging .card_prof {
     cursor: grab;
     user-select: none;
 }
 
-.carousel :where(.card, .img) {
+.carousel_prof :where(.card_prof, .skill_spinner) {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.carousel .card {
+.carousel_prof .card_prof {
     background: #fff;
     scroll-snap-align: start;
     height: 300px;
@@ -506,28 +639,21 @@ section {
     border-radius: 8px;
 }
 
-.carousel .card .skill_spinner {
+.carousel_prof .card_prof .skill_spinner {
     background: #8B53FF;
     height: 148px;
     width: 148px;
     border-radius: 50%;
 }
 
-.carousel .card h2 {
+.carousel_prof .card_prof h2 {
     color: #000;
     font-weight: 500;
     font-size: 1.56rem;
     margin: 30px 0 5px;
 }
 
-.skills h2 {
-    text-align: center;
-    font-size: 60px;
-}
-
-.skills h2 span {
-    color: #0ef;
-}
+/* spinner designs ---------------------*/
 
 .box {
     position: relative;
@@ -594,10 +720,6 @@ section {
     margin-right: 1rem;
     color: #fff;
     padding-bottom: 20px;
-}
-
-.filter-buttons .btn:hover {
-    color: #0ef;
 }
 
 .portfolio-gallery {
@@ -950,13 +1072,25 @@ a.top:hover {
 /* keyframes ------------------------------------ */
 
 @media screen and (max-width: 900px) {
-    .skill_details .carousel {
+    .skill_details_tech .carousel_tech {
         grid-auto-columns: calc((100% / 2) - 9px);
     }
 }
 
 @media screen and (max-width: 600px) {
-    .skill_details .carousel {
+    .skill_details_tech .carousel_tech {
+        grid-auto-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .skill_details_prof .carousel_prof {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skill_details_prof .carousel_prof {
         grid-auto-columns: 100%;
     }
 }
@@ -1141,7 +1275,7 @@ a.top:hover {
     .home {
         grid-template-columns: 1fr;
     }
-    
+
     .filter-buttons {
         margin: 2.5rem 0;
     }

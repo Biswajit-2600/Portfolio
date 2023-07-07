@@ -118,128 +118,214 @@ slideLeftAnchor3.forEach((el) => observer.observe(el));
 const slideLeftAnchor4 = document.querySelectorAll(".slide-top-4");
 slideLeftAnchor4.forEach((el) => observer.observe(el));
 
-// skills section carousel ///////////////
+// skills section carousel_tech ///////////////
 
-const skill_details = document.querySelector(".skill_details");
-const carousel = document.querySelector(".carousel");
-const firstCardWidth = carousel.querySelector(".card").offsetWidth;
-const arrowBtns = document.querySelectorAll(".skill_details i");
-const carouselChildrens = [...carousel.children];
+const skill_details_tech = document.querySelector(".skill_details_tech");
+const carousel_tech = document.querySelector(".carousel_tech");
+const firstCardWidthTech =
+  carousel_tech.querySelector(".card_tech").offsetWidth;
+const arrowBtnsTech = document.querySelectorAll(".skill_details_tech i");
+const carouselChildrensTech = [...carousel_tech.children];
 
-let isDragging = false,
-  isAutoPlay = true,
-  startX,
-  startScrollLeft,
-  timeoutId;
+let isdraggingTech = false,
+  isautoPlayTech = true,
+  startXTech,
+  startScrollLeftTech,
+  timeoutIdTech;
 
-// Get the number of cards that can fit in the carousel at once
-let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+// Get the number of cards that can fit in the carousel_tech at once
+let cardPerViewTech = Math.round(
+  carousel_tech.offsetWidth / firstCardWidthTech
+);
 
-// Insert copies of the last few cards to beginning of carousel for infinite scrolling
-carouselChildrens
-  .slice(-cardPerView)
+// Insert copies of the last few cards to beginning of carousel_tech for infinite scrolling
+carouselChildrensTech
+  .slice(-cardPerViewTech)
   .reverse()
-  .forEach((card) => {
-    carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+  .forEach((card_tech) => {
+    carousel_tech.insertAdjacentHTML("afterbegin", card_tech.outerHTML);
   });
 
-// Insert copies of the first few cards to end of carousel for infinite scrolling
-carouselChildrens.slice(0, cardPerView).forEach((card) => {
-  carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+// Insert copies of the first few cards to end of carousel_tech for infinite scrolling
+carouselChildrensTech.slice(0, cardPerViewTech).forEach((card_tech) => {
+  carousel_tech.insertAdjacentHTML("beforeend", card_tech.outerHTML);
 });
 
-// Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
-carousel.classList.add("no-transition");
-carousel.scrollLeft = carousel.offsetWidth;
-carousel.classList.remove("no-transition");
+// Scroll the carousel_tech at appropriate postition to hide first few duplicate cards on Firefox
+carousel_tech.classList.add("no-transition");
+carousel_tech.scrollLeft = carousel_tech.offsetWidth;
+carousel_tech.classList.remove("no-transition");
 
-// Add event listeners for the arrow buttons to scroll the carousel left and right
-arrowBtns.forEach((btn) => {
+// Add event listeners for the arrow buttons to scroll the carousel_tech left and right
+arrowBtnsTech.forEach((btn) => {
   btn.addEventListener("click", () => {
-    carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+    carousel_tech.scrollLeft +=
+      btn.id == "left" ? -firstCardWidthTech : firstCardWidthTech;
   });
 });
 
-const dragStart = (e) => {
-  isDragging = true;
-  carousel.classList.add("dragging");
-  // Records the initial cursor and scroll position of the carousel
-  startX = e.pageX;
-  startScrollLeft = carousel.scrollLeft;
+const dragStarTech = (e) => {
+  isdraggingTech = true;
+  carousel_tech.classList.add("draggingTech");
+  // Records the initial cursor and scroll position of the carousel_tech
+  startXTech = e.pageX;
+  startScrollLeftTech = carousel_tech.scrollLeft;
 };
 
-const dragging = (e) => {
-  if (!isDragging) return; // if isDragging is false return from here
-  // Updates the scroll position of the carousel based on the cursor movement
-  carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+const draggingTech = (e) => {
+  if (!isdraggingTech) return; // if isdraggingTech is false return from here
+  // Updates the scroll position of the carousel_tech based on the cursor movement
+  carousel_tech.scrollLeft = startScrollLeftTech - (e.pageX - startXTech);
 };
 
-const dragStop = () => {
-  isDragging = false;
-  carousel.classList.remove("dragging");
+const dragStopTech = () => {
+  isdraggingTech = false;
+  carousel_tech.classList.remove("draggingTech");
 };
 
-const infiniteScroll = () => {
-  // If the carousel is at the beginning, scroll to the end
-  if (carousel.scrollLeft === 0) {
-    carousel.classList.add("no-transition");
-    carousel.scrollLeft = carousel.scrollWidth - 2 * carousel.offsetWidth;
-    carousel.classList.remove("no-transition");
+const infiniteScrollTech = () => {
+  // If the carousel_tech is at the beginning, scroll to the end
+  if (carousel_tech.scrollLeft === 0) {
+    carousel_tech.classList.add("no-transition");
+    carousel_tech.scrollLeft =
+      carousel_tech.scrollWidth - 2 * carousel_tech.offsetWidth;
+    carousel_tech.classList.remove("no-transition");
   }
-  // If the carousel is at the end, scroll to the beginning
+  // If the carousel_tech is at the end, scroll to the beginning
   else if (
-    Math.ceil(carousel.scrollLeft) ===
-    carousel.scrollWidth - carousel.offsetWidth
+    Math.ceil(carousel_tech.scrollLeft) ===
+    carousel_tech.scrollWidth - carousel_tech.offsetWidth
   ) {
-    carousel.classList.add("no-transition");
-    carousel.scrollLeft = carousel.offsetWidth;
-    carousel.classList.remove("no-transition");
+    carousel_tech.classList.add("no-transition");
+    carousel_tech.scrollLeft = carousel_tech.offsetWidth;
+    carousel_tech.classList.remove("no-transition");
   }
 
-  // Clear existing timeout & start autoplay if mouse is not hovering over carousel
-  clearTimeout(timeoutId);
-  if (!skill_details.matches(":hover")) autoPlay();
+  // Clear existing timeout & start autoPlayTech if mouse is not hovering over carousel_tech
+  clearTimeout(timeoutIdTech);
+  if (!skill_details_tech.matches(":hover")) autoPlayTech();
 };
 
-const autoPlay = () => {
-  // Autoplay the carousel after every 2000 ms
-  timeoutId = setTimeout(() => (carousel.scrollLeft += firstCardWidth), 2000);
+const autoPlayTech = () => {
+  // autoPlayTech the carousel_tech after every 2000 ms
+  timeoutIdTech = setTimeout(
+    () => (carousel_tech.scrollLeft += firstCardWidthTech),
+    2000
+  );
 };
-autoPlay();
+autoPlayTech();
 
-carousel.addEventListener("mousedown", dragStart);
-carousel.addEventListener("mousemove", dragging);
-document.addEventListener("mouseup", dragStop);
-carousel.addEventListener("scroll", infiniteScroll);
-skill_details.addEventListener("mouseenter", () => clearTimeout(timeoutId));
-skill_details.addEventListener("mouseleave", autoPlay);
+carousel_tech.addEventListener("mousedown", dragStarTech);
+carousel_tech.addEventListener("mousemove", draggingTech);
+document.addEventListener("mouseup", dragStopTech);
+carousel_tech.addEventListener("scroll", infiniteScrollTech);
+skill_details_tech.addEventListener("mouseenter", () =>
+  clearTimeout(timeoutIdTech)
+);
+skill_details_tech.addEventListener("mouseleave", autoPlayTech);
 
-// menu for toggling between technical and professional skills
+// skills section carousel_prof ///////////////
 
-var divs = ["technical_menu", "professional_menu"];
-var divBtn = ["technical_menu_btn", "professional_menu_btn"];
-var visibleDivId = null;
-function toggleVisibility(divId) {
-  if (visibleDivId === divId) {
-    //visibleDivId = null;
-  } else {
-    visibleDivId = divId;
+const skill_details_prof = document.querySelector(".skill_details_prof");
+const carousel_prof = document.querySelector(".carousel_prof");
+const firstCardWidthprof =
+  carousel_prof.querySelector(".card_prof").offsetWidth;
+const arrowBtnsprof = document.querySelectorAll(".skill_details_prof i");
+const carouselChildrensprof = [...carousel_prof.children];
+
+let isdraggingprof = false,
+  isautoPlayprof = true,
+  startXprof,
+  startScrollLeftprof,
+  timeoutIdprof;
+
+// Get the number of cards that can fit in the carousel_prof at once
+let cardPerViewprof = Math.round(
+  carousel_prof.offsetWidth / firstCardWidthprof
+);
+
+// Insert copies of the last few cards to beginning of carousel_prof for infinite scrolling
+carouselChildrensprof
+  .slice(-cardPerViewprof)
+  .reverse()
+  .forEach((card_prof) => {
+    carousel_prof.insertAdjacentHTML("afterbegin", card_prof.outerHTML);
+  });
+
+// Insert copies of the first few cards to end of carousel_prof for infinite scrolling
+carouselChildrensprof.slice(0, cardPerViewprof).forEach((card_prof) => {
+  carousel_prof.insertAdjacentHTML("beforeend", card_prof.outerHTML);
+});
+
+// Scroll the carousel_prof at appropriate postition to hide first few duplicate cards on Firefox
+carousel_prof.classList.add("no-transition");
+carousel_prof.scrollLeft = carousel_prof.offsetWidth;
+carousel_prof.classList.remove("no-transition");
+
+// Add event listeners for the arrow buttons to scroll the carousel_prof left and right
+arrowBtnsprof.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    carousel_prof.scrollLeft +=
+      btn.id == "left" ? -firstCardWidthprof : firstCardWidthprof;
+  });
+});
+
+const dragStarprof = (e) => {
+  isdraggingprof = true;
+  carousel_prof.classList.add("draggingprof");
+  // Records the initial cursor and scroll position of the carousel_prof
+  startXprof = e.pageX;
+  startScrollLeftprof = carousel_prof.scrollLeft;
+};
+
+const draggingprof = (e) => {
+  if (!isdraggingprof) return; // if isdraggingprof is false return from here
+  // Updates the scroll position of the carousel_prof based on the cursor movement
+  carousel_prof.scrollLeft = startScrollLeftprof - (e.pageX - startXprof);
+};
+
+const dragStopprof = () => {
+  isdraggingprof = false;
+  carousel_prof.classList.remove("draggingprof");
+};
+
+const infiniteScrollprof = () => {
+  // If the carousel_prof is at the beginning, scroll to the end
+  if (carousel_prof.scrollLeft === 0) {
+    carousel_prof.classList.add("no-transition");
+    carousel_prof.scrollLeft =
+      carousel_prof.scrollWidth - 2 * carousel_prof.offsetWidth;
+    carousel_prof.classList.remove("no-transition");
   }
-  hideNonVisibleDivs();
-}
-function hideNonVisibleDivs() {
-  var i, divId, div, divBtnCurr, skillBtn;
-  for (i = 0; i < divs.length; i++) {
-    divId = divs[i];
-    divBtnCurr = divBtn[i];
-    div = document.getElementById(divId);
-    skillBtn = document.getElementById(divBtnCurr);
-    if (visibleDivId === divId) {
-      div.style.display = "flex";
-      skillBtn.style.color = "#0ef";
-    } else {
-      div.style.display = "none";
-      skillBtn.style.color = "#fff";
-    }
+  // If the carousel_prof is at the end, scroll to the beginning
+  else if (
+    Math.ceil(carousel_prof.scrollLeft) ===
+    carousel_prof.scrollWidth - carousel_prof.offsetWidth
+  ) {
+    carousel_prof.classList.add("no-transition");
+    carousel_prof.scrollLeft = carousel_prof.offsetWidth;
+    carousel_prof.classList.remove("no-transition");
   }
-}
+
+  // Clear existing timeout & start autoPlayprof if mouse is not hovering over carousel_prof
+  clearTimeout(timeoutIdprof);
+  if (!skill_details_prof.matches(":hover")) autoPlayprof();
+};
+
+const autoPlayprof = () => {
+  // autoPlayprof the carousel_prof after every 2000 ms
+  timeoutIdprof = setTimeout(
+    () => (carousel_prof.scrollLeft += firstCardWidthprof),
+    2000
+  );
+};
+autoPlayprof();
+
+carousel_prof.addEventListener("mousedown", dragStarprof);
+carousel_prof.addEventListener("mousemove", draggingprof);
+document.addEventListener("mouseup", dragStopprof);
+carousel_prof.addEventListener("scroll", infiniteScrollprof);
+skill_details_prof.addEventListener("mouseenter", () =>
+  clearTimeout(timeoutIdprof)
+);
+skill_details_prof.addEventListener("mouseleave", autoPlayprof);

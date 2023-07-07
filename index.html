@@ -215,22 +215,21 @@
 
     <section id="skills" class="skills">
       <h2>My <span>Skills</span></h2>
+
+    <!-- technical div ----------------------------------->
+
       <div class="container">
-        <div class="filter-buttons">
-          <a href="#skills" onclick="toggleVisibility('technical_menu');"><button class="btn">
-              <h3 id="technical_menu_btn" style="color: #0ef;">Technical</h3>
-            </button></a
-          >
-          <a href="#skills" onclick="toggleVisibility('professional_menu');"><button class="btn">
-              <h3 id="professional_menu_btn">Professional</h3>
-            </button></a
-          >
+        <div class="skills_filter_buttons"><button class="btn">
+            <h3>Technical</h3>
+          </button>
         </div>
+      </div>
+
         <div id="technical_menu" class="skill_tech">
-          <div class="skill_details">
+          <div class="skill_details_tech">
             <i id="left" class="bx bx-chevron-left"></i>
-            <ul class="carousel">
-              <li class="card">
+            <ul class="carousel_tech">
+              <li class="card_tech">
                 <div class="skill_spinner">
                   <div class="box">
                     <div class="each-circle">
@@ -247,7 +246,7 @@
                 </div>
                 <h2>Java</h2>
               </li>
-              <li class="card">
+              <li class="card_tech">
                 <div class="skill_spinner">
                   <div class="box">
                     <div class="each-circle">
@@ -264,7 +263,7 @@
                 </div>
                 <h2>Python</h2>
               </li>
-              <li class="card">
+              <li class="card_tech">
                 <div class="skill_spinner">
                   <div class="box">
                     <div class="each-circle">
@@ -281,7 +280,7 @@
                 </div>
                 <h2>JavaScript</h2>
               </li>
-              <li class="card">
+              <li class="card_tech">
                 <div class="skill_spinner">
                   <div class="box">
                     <div class="each-circle">
@@ -303,11 +302,19 @@
           </div>
         </div>
 
-        <div id="professional_menu" class="skill_prof" style="display: none;">
-          <div class="skill_details">
+    <!-- technical div ----------------------------------->
+
+        <div class="container">
+          <div class="skills_filter_buttons"><button class="btn">
+            <h3>Professional</h3>
+          </button>
+        </div>
+        </div>
+        <div id="professional_menu" class="skill_prof">
+          <div class="skill_details_prof">
             <i id="left" class="bx bx-chevron-left"></i>
-            <ul class="carousel">
-              <li class="card">
+            <ul class="carousel_prof">
+              <li class="card_prof">
                 <div class="skill_spinner">
                   <div class="box">
                     <div class="each-circle">
@@ -324,7 +331,7 @@
                 </div>
                 <h2>Team Work</h2>
               </li>
-              <li class="card">
+              <li class="card_prof">
                 <div class="skill_spinner">
                   <div class="box">
                     <div class="each-circle">
@@ -341,7 +348,7 @@
                 </div>
                 <h2>Adaptive</h2>
               </li>
-              <li class="card">
+              <li class="card_prof">
                 <div class="skill_spinner">
                   <div class="box">
                     <div class="each-circle">
@@ -358,7 +365,7 @@
                 </div>
                 <h2>Communication</h2>
               </li>
-              <li class="card">
+              <li class="card_prof">
                 <div class="skill_spinner">
                   <div class="box">
                     <div class="each-circle">
@@ -379,7 +386,6 @@
             <i id="right" class="bx bx-chevron-right"></i>
           </div>
         </div>
-      </div>
     </section>
 
     <!-- portfolio section ------------------------------------>
