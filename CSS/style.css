@@ -27,8 +27,9 @@
     border: 15px solid #333333;
     border-top-color: #0ef;
     border-radius: 50%;
-    box-shadow: 0 0 5px #0ef,
-        0 0 25px #0ef;
+    box-shadow: 0 0 5px cyan,
+        0 0 25px cyan, 0 0 50px cyan,
+        0 0 75px cyan, 0 0 100px cyan;
     animation: loading 0.75s ease infinite;
 }
 
@@ -558,7 +559,7 @@ section {
 }
 
 .carousel_tech .card_tech {
-    background: #fff;
+    background: rgb(3, 110, 153);
     scroll-snap-align: start;
     height: 300px;
     list-style: none;
@@ -569,7 +570,7 @@ section {
 }
 
 .carousel_tech .card_tech .skill_spinner {
-    background: #8B53FF;
+    background: #4888dc;
     height: 148px;
     width: 148px;
     border-radius: 50%;
@@ -676,7 +677,7 @@ section {
 }
 
 .carousel_prof .card_prof {
-    background: #fff;
+    background: rgb(3, 110, 153);
     scroll-snap-align: start;
     height: 300px;
     list-style: none;
@@ -687,7 +688,7 @@ section {
 }
 
 .carousel_prof .card_prof .skill_spinner {
-    background: #8B53FF;
+    background: #4888dc;
     height: 148px;
     width: 148px;
     border-radius: 50%;
