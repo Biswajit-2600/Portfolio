@@ -1,3 +1,17 @@
+// preloader ///////////////////////
+
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+
+// page code ///////////////////////////
+
 var typed = new Typed(".text", {
   strings: [
     "Web Developer",
