@@ -848,6 +848,7 @@ section {
 /* contact section ------------------------------------ */
 
 .contact {
+    position: relative;
     background: #081b29;
     align-items: center;
     gap: 3rem;
@@ -945,6 +946,7 @@ form textarea {
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
+    cursor: pointer;
     box-shadow: 0 0 5px #0ef,
         0 0 25px #0ef;
 }
@@ -952,7 +954,7 @@ form textarea {
 .contact-form form .contact-btns:hover {
     box-shadow: 0 0 5px cyan,
         0 0 25px cyan, 0 0 50px cyan,
-        0 0 100px cyan, 0 0 200px cyan;
+        0 0 100px cyan;
     transition: all .5s;
 }
 
@@ -974,19 +976,10 @@ select:-webkit-autofill:focus {
 
 footer {
     position: relative;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     background: rgb(7, 85, 91);
-}
-
-footer div {
-    flex: 1;
-}
-
-footer div:nth-of-type(odd) {
-    flex: 10;
 }
 
 .footer-text p {
@@ -1003,47 +996,6 @@ footer a {
 
 footer span {
     font-size: small;
-}
-
-.footer-iconTop a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: .8rem;
-    background: #0ef;
-    border: .2rem solid #0ef;
-    border-radius: .6rem;
-    z-index: 1;
-    overflow: hidden;
-}
-
-a.top {
-    padding: 2px;
-    margin-top: 10px;
-}
-
-a.top:hover {
-    box-shadow: 0 0 5px #0ef,
-        0 0 10px #0ef;
-    ;
-}
-
-.footer-iconTop a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #40769a;
-    z-index: -1;
-    transition: .5s;
-}
-
-.footer-iconTop a i {
-    font-size: 2.4rem;
-    color: #112e42;
-    padding: 0;
 }
 
 /* parallax ------------------------------------ */

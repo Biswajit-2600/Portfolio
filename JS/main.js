@@ -60,6 +60,8 @@ let header_color = document.querySelector(".header");
 let header = document.querySelector("header");
 let navLinks = document.querySelectorAll("header ul li a");
 let sections = document.querySelectorAll("section");
+let footer_icon = document.querySelector("footer-iconTop");
+const iconDiv = document.getElementById("footer-iconTop");
 
 menuIcon.onclick = () => {
   menuIcon.classList.toggle("bx-x");
@@ -72,7 +74,6 @@ window.onscroll = () => {
   menuIcon.classList.remove("bx-x");
   navlist.classList.remove("open");
   header_color.classList.remove("color");
-
   sections.forEach((sec) => {
     let top = window.scrollY;
     let offset = sec.offsetTop - 100;
@@ -99,7 +100,7 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show-items");
-    } 
+    }
   });
 });
 
