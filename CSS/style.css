@@ -568,8 +568,8 @@ section {
 
 .carousel_tech .card_tech h2 {
     color: #000;
-    font-weight: 500;
-    font-size: 1.56rem;
+    font-weight: 1000;
+    font-size: 2rem;
     margin: 30px 0 5px;
 }
 
@@ -687,7 +687,7 @@ section {
 .carousel_prof .card_prof h2 {
     color: #000;
     font-weight: 500;
-    font-size: 1.56rem;
+    font-size: 1.8rem;
     margin: 30px 0 5px;
 }
 
