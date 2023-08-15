@@ -1337,4 +1337,13 @@ footer span {
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
+    .contact-details {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact-icons a {
+        margin: 5px 15px 50px 0px;
+    }
 }
